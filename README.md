@@ -30,5 +30,9 @@ link to the Aboutme: https://github.com/saitejaswini2525/assignment2-Yarapathine
 
 ----
 ## Quotes
->1.All of us do not have equal talent. But , all of us have an equal opportunity to develop our talents *Author:Dr.APJ Abdul kalam*
->2.Creativity is seeing the same thing but thinking differently *Author:Dr.APJ Abdul kalam*
+
+>1.All of us do not have equal talent. But , all of us have an equal opportunity to develop our talents.
+*Author:Dr.APJ Abdul kalam*
+
+>2.Creativity is seeing the same thing but thinking differently.
+*Author:Dr.APJ Abdul kalam*
