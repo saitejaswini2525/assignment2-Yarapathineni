@@ -14,20 +14,21 @@ The National Museum, New Delhi, as we see it today, has an interesting beginning
 * This airport has domestic flights and is 3 miles from the center of Melbourne, FL.
 * Another major airport is Orlando International Airport (MCO / KMCO), which has international and domestic flights from Orlando, Florida and is 63 miles from Melbourne, FL.
 link to the Aboutme: https://github.com/saitejaswini2525/assignment2-Yarapathineni/blob/main/AboutMe.md
-# Tables
+
 --- 
-# Cities Table
-|Guntur|hyderabad|vijayawada|vizag|
-|------|---|---|----|
-Here the table describe about four cities and famous location to visit in the city.
----
-|name of a city|important location to visit in the city|amount of time to spend visiting the important location|
-|--------------|---------------------------------------|--------------------------------------------------------|
-|Guntur|chilly trade center|5hrs|
-|------|--------------------|---|
-|hyderabad|charminar|3hrs|
-|---------|---------|----|
-|vijayawada|durgatemple|1day|
-|-----------|----------|-----|
-|vizag|beach|3-4days|
-|-----|-----|-------|
+## Cities Table and locations to be visited
+
+
+ here the table descibe about 4 cities and famous locations to visit in the city
+
+|name of a city|location to visit in the city|amount of time to spend visiting the important location|
+|--------------|-----------------------------|-------------------------------------------------------|
+|Guntur|Chillies trade center|3hrs|
+|Vijayawada|Kanaka durga temple|5hrs|
+|Vizag|Rk beach|3days|
+|Hyderabad|Charminar|4hrs|
+
+----
+## Quotes
+>1.All of us do not have equal talent. But , all of us have an equal opportunity to develop our talents *Author:Dr.APJ Abdul kalam*
+>2.Creativity is seeing the same thing but thinking differently *Author:Dr.APJ Abdul kalam*
