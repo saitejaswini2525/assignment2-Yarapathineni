@@ -36,3 +36,25 @@ link to the Aboutme: https://github.com/saitejaswini2525/assignment2-Yarapathine
 
 >2.Creativity is seeing the same thing but thinking differently.
 *Author:Dr.APJ Abdul kalam*
+
+----
+
+## Code Fencing
+
+> htaccess redirect to https://www
+
+find the answer: https://stackoverflow.com/questions/13977851/htaccess-redirect-to-https-www
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+RewriteCond !{HTTPS} off
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+</IfModule>
+
+link to the snippet:https://css-tricks.com/snippets/htaccess/
+
+
