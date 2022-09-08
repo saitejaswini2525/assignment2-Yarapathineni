@@ -41,7 +41,7 @@ link to the Aboutme: https://github.com/saitejaswini2525/assignment2-Yarapathine
 
 ## Code Fencing
 
-> htaccess redirect to https://www
+> Custom error pages on asp.net MVC3
 
 find the answer: <https://stackoverflow.com/questions/5226791/custom-error-pages-on-asp-net-mvc3>
 
