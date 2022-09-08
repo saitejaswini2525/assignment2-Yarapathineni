@@ -43,17 +43,43 @@ link to the Aboutme: https://github.com/saitejaswini2525/assignment2-Yarapathine
 
 > htaccess redirect to https://www
 
-find the answer: <https://stackoverflow.com/questions/13977851/htaccess-redirect-to-https-www>
+find the answer: <https://stackoverflow.com/questions/5226791/custom-error-pages-on-asp-net-mvc3>
 
-<IfModule mod_rewrite.c>
+```
+protected void Application_Error() {
+//while my project is running in debug mode
+if (HttpContext.Current.IsDebuggingEnabled && WebConfigurationManager.AppSettings["EnableCustomErrorPage"].Equals("false"))
+{
+    Log.Logger.Error("unhandled exception: ", Server.GetLastError());
+}
+else
+{
+    try
+    {
+        var exception = Server.GetLastError();
 
-RewriteEngine On
-RewriteCond !{HTTPS} off
-RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+        Log.Logger.Error("unhandled exception: ", exception);
 
-</IfModule>
+        Response.Clear();
+        Server.ClearError();
+        var routeData = new RouteData();
+        routeData.Values["controller"] = "Errors";
+        routeData.Values["action"] = "General";
+        routeData.Values["exception"] = exception;
 
-link to the snippet:https://css-tricks.com/snippets/htaccess/
+        IController errorsController = new ErrorsController();
+        var rc = new RequestContext(new HttpContextWrapper(Context), routeData);
+        errorsController.Execute(rc);
+    }
+    catch (Exception e)
+    {
+        //if Error controller failed for same reason, we will display static HTML error page
+        Log.Logger.Fatal("failed to display error page, fallback to HTML error: ", e);
+        Response.TransmitFile("~/error.html");
+    }
+}
+}
+```
+
+link to the snippet:<https://css-tricks.com/snippets/htaccess/custom-error-pages/>
 
