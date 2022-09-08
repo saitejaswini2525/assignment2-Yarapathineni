@@ -43,7 +43,7 @@ link to the Aboutme: https://github.com/saitejaswini2525/assignment2-Yarapathine
 
 > htaccess redirect to https://www
 
-find the answer: https://stackoverflow.com/questions/13977851/htaccess-redirect-to-https-www
+find the answer: <https://stackoverflow.com/questions/13977851/htaccess-redirect-to-https-www>
 
 <IfModule mod_rewrite.c>
 
@@ -56,5 +56,4 @@ RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 link to the snippet:https://css-tricks.com/snippets/htaccess/
-
 
